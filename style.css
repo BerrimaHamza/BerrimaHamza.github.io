@@ -248,6 +248,13 @@ html[data-lang="fr"] .lang-opt[data-l="fr"] { color: var(--accent); }
 .clist li { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
 .cn { font-size: 0.92rem; }
 .cm { font-size: 0.72rem; color: var(--accent); white-space: nowrap; }
+.clist li:has(.cert) { padding: 0; }
+.cert { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; width: 100%; padding: 14px 0; }
+.cert .arr { display: inline-block; color: var(--muted); font-size: 0.8em; transition: color .2s, transform .2s; }
+.cert:hover .cn { color: var(--accent); }
+.cert:hover .arr { color: var(--accent); transform: translate(2px, -2px); }
+a.ext { border-bottom: 1px dotted rgba(240, 166, 58, .5); transition: color .2s, border-color .2s; }
+a.ext:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* CONTACT */
 .contact {
@@ -333,6 +340,7 @@ footer a:hover { color: var(--accent); }
   .facts > div { flex-direction: column; gap: 2px; }
   .facts dd { text-align: left; }
   .clist li { flex-direction: column; gap: 2px; }
+  .cert { flex-direction: column; gap: 2px; }
   .contact { padding: 28px 20px; }
   .st { padding: 18px; }
   .sv { font-size: 1.6rem; }

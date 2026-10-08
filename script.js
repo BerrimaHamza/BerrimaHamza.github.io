@@ -31,8 +31,8 @@
 
   /* ---------- typed roles ---------- */
   var roles = {
-    en: ['Embedded Software Engineer', 'C / C++ & Qt Developer', 'Automotive Test & Validation', 'STM32 · ESP32 · Rust'],
-    fr: ['Ingénieur Logiciel Embarqué', 'Développeur C / C++ & Qt', 'Test & Validation Automobile', 'STM32 · ESP32 · Rust']
+    en: ['Embedded Software Engineer', 'Test Bench Automation', 'C++ / Qt · Python', 'Automotive Test & Validation'],
+    fr: ['Ingénieur Logiciel Embarqué', 'Automatisation de bancs de test', 'C++ / Qt · Python', 'Test & Validation Automobile']
   };
   var typedEl = document.getElementById('typed');
   var timer = null;
