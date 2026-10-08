@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hamza Berrima — Embedded Software Engineer</title>
+  <meta name="description" content="Hamza Berrima — embedded software engineer (C/C++, Qt, Python) with automotive test & validation experience. Ariana, Tunisia.">
+  <link rel="icon" href="assets/hamza.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function () {
+      var lang = '';
+      try { lang = localStorage.getItem('lang') || ''; } catch (e) {}
+      if (!lang) lang = (navigator.language || '').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+      document.documentElement.setAttribute('data-lang', lang);
+      document.documentElement.lang = lang;
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<!-- ============ NAVBAR ============ -->
+<header id="nav">
+  <div class="nav-in">
+    <a class="logo mono" href="#home"><span class="logo-b">hb</span><span class="logo-t">hamza.berrima</span></a>
+
+    <nav class="links">
+      <a href="#about"><span class="en">About</span><span class="fr">À propos</span></a>
+      <a href="#experience"><span class="en">Experience</span><span class="fr">Expérience</span></a>
+      <a href="#projects"><span class="en">Projects</span><span class="fr">Projets</span></a>
+      <a href="#skills"><span class="en">Skills</span><span class="fr">Compétences</span></a>
+      <a href="#certifications"><span class="en">Certifications</span><span class="fr">Certifications</span></a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-r">
+      <button class="lang mono" type="button" aria-label="Switch language">
+        <span class="lang-opt" data-l="en">EN</span><span class="lang-sep">/</span><span class="lang-opt" data-l="fr">FR</span>
+      </button>
+      <a class="nav-cv en" href="assets/Hamza_Berrima_CV_EN.pdf" target="_blank">CV ↓</a>
+      <a class="nav-cv fr" href="assets/Hamza_Berrima_CV_FR.pdf" target="_blank">CV ↓</a>
+      <button class="menu-btn" type="button" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="hero wrap">
+    <div class="hero-grid">
+      <div class="hero-txt">
+        <p class="kicker mono"><span class="dot"></span><span class="en">Available for embedded &amp; automotive roles</span><span class="fr">Disponible pour des postes embarqué &amp; automobile</span></p>
+        <h1 class="hero-name">Hamza<br>Berrima<span class="accent">.</span></h1>
+        <p class="hero-typed mono"><span class="prompt">&gt;</span> <span id="typed"></span><span class="caret"></span></p>
+        <p class="hero-desc">
+          <span class="en">I build software that sits close to hardware: C++/Qt applications and Python drivers for automated test benches, firmware on STM32 and ESP32, and validation of automotive infotainment systems on HIL benches.</span>
+          <span class="fr">Je développe du logiciel proche du matériel : applications C++/Qt et drivers Python pour bancs de test automatisés, firmware sur STM32 et ESP32, et validation de systèmes d'infodivertissement automobile sur banc HIL.</span>
+        </p>
+        <div class="ctas">
+          <a class="btn btn-fill" href="#projects"><span class="en">See my work</span><span class="fr">Voir mes projets</span></a>
+          <a class="btn btn-line" href="#contact"><span class="en">Contact me</span><span class="fr">Me contacter</span></a>
+        </div>
+        <div class="hero-soc">
+          <a href="https://www.linkedin.com/in/hamzaberrima/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/BerrimaHamza" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:berrimahamza@outlook.com">Email</a>
+        </div>
+      </div>
+
+      <div class="chip-wrap">
+        <div class="chip">
+          <span class="pins pins-l"></span><span class="pins pins-r"></span>
+          <span class="pins pins-t"></span><span class="pins pins-b"></span>
+          <div class="chip-body">
+            <img src="assets/hamza.jpg" alt="Hamza Berrima" width="320" height="320">
+          </div>
+          <span class="chip-label mono">HB-2025 · FST</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="st"><p class="sv">1.5<span>+</span></p><p class="sl"><span class="en">years in industry</span><span class="fr">ans en entreprise</span></p></div>
+      <div class="st"><p class="sv">15<span>+</span></p><p class="sl"><span class="en">ATP tests automated</span><span class="fr">tests ATP automatisés</span></p></div>
+      <div class="st"><p class="sv">6</p><p class="sl"><span class="en">projects built</span><span class="fr">projets réalisés</span></p></div>
+      <div class="st"><p class="sv">3</p><p class="sl"><span class="en">languages spoken</span><span class="fr">langues parlées</span></p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section wrap">
+    <h2 class="sh reveal"><span class="sh-n mono">01</span><span class="en">About</span><span class="fr">À propos</span><span class="sh-line"></span></h2>
+
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="en">I graduated in 2025 as an electronics engineer from the Faculty of Sciences of Tunis, specialising in embedded systems. I joined SERMA International for my end-of-studies internship, stayed on as an automotive test &amp; validation engineer on Renault's Android Automotive infotainment platform, and moved into embedded software development in April 2026.</p>
+        <p class="fr">Diplômé en 2025 ingénieur en électronique embarquée de la Faculté des Sciences de Tunis, j'ai rejoint SERMA International pour mon stage de fin d'études, puis j'y suis resté en tant qu'ingénieur test &amp; validation sur la plateforme d'infodivertissement Android Automotive de Renault, avant de passer au développement logiciel embarqué en avril 2026.</p>
+        <p class="en">Today I write the software that runs our automated test benches — instrument drivers in Python and a C++/Qt application that executes acceptance procedures and produces the reports. I like work where you can see the result on a scope or a bench, not just on a screen.</p>
+        <p class="fr">Aujourd'hui, j'écris le logiciel qui fait tourner nos bancs de test automatisés : des drivers d'instruments en Python et une application C++/Qt qui exécute les procédures d'acceptation et produit les rapports. J'aime le travail dont on voit le résultat sur un oscilloscope ou un banc, pas seulement à l'écran.</p>
+        <p class="en">Outside work I was an active member of the IEEE Robotics &amp; Automation Society student chapter at FST, and volunteered with the Tunisian Red Crescent.</p>
+        <p class="fr">En parallèle, j'ai été membre actif du chapitre étudiant IEEE Robotics &amp; Automation Society de la FST et bénévole au Croissant-Rouge tunisien.</p>
+      </div>
+
+      <dl class="facts reveal">
+        <div><dt><span class="en">Based in</span><span class="fr">Basé à</span></dt><dd><span class="en">Ariana, Tunisia</span><span class="fr">Ariana, Tunisie</span></dd></div>
+        <div><dt><span class="en">Currently</span><span class="fr">Actuellement</span></dt><dd>SERMA International</dd></div>
+        <div><dt><span class="en">Degree</span><span class="fr">Diplôme</span></dt><dd><span class="en">Eng. Embedded Electronics</span><span class="fr">Ing. Électronique embarquée</span></dd></div>
+        <div><dt><span class="en">Focus</span><span class="fr">Domaine</span></dt><dd><span class="en">Embedded · Automotive · Test</span><span class="fr">Embarqué · Automobile · Test</span></dd></div>
+        <div><dt><span class="en">Languages</span><span class="fr">Langues</span></dt><dd><span class="en">Arabic, French, English (C1)</span><span class="fr">Arabe, français, anglais (C1)</span></dd></div>
+        <div><dt>Email</dt><dd><a href="mailto:berrimahamza@outlook.com">berrimahamza@outlook.com</a></dd></div>
+      </dl>
+    </div>
+
+    <div class="edu">
+      <div class="edu-item reveal">
+        <p class="edu-date mono">2022 — 2025</p>
+        <p class="edu-t"><span class="en">National Engineering Diploma, Embedded Electronics</span><span class="fr">Diplôme national d'ingénieur, électronique embarquée</span></p>
+        <p class="edu-s"><span class="en">Faculty of Sciences of Tunis — University of Tunis El Manar</span><span class="fr">Faculté des Sciences de Tunis — Université de Tunis El Manar</span></p>
+      </div>
+      <div class="edu-item reveal">
+        <p class="edu-date mono">2020 — 2022</p>
+        <p class="edu-t"><span class="en">Preparatory cycle, Mathematics &amp; Physics</span><span class="fr">Cycle préparatoire, Mathématiques et Physique</span></p>
+        <p class="edu-s"><span class="en">Preparatory Institute for Engineering Studies of Kairouan (IPEIK)</span><span class="fr">Institut Préparatoire aux Études d'Ingénieurs de Kairouan (IPEIK)</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section wrap">
+    <h2 class="sh reveal"><span class="sh-n mono">02</span><span class="en">Experience</span><span class="fr">Expérience</span><span class="sh-line"></span></h2>
+
+    <div class="jobs">
+      <article class="job reveal">
+        <div class="job-when mono">
+          <p class="job-date"><span class="en">Apr 2026 — now</span><span class="fr">Avr. 2026 — auj.</span></p>
+          <p class="job-org">SERMA International</p>
+        </div>
+        <div class="job-card">
+          <h3 class="job-t"><span class="en">Embedded Software Engineer</span><span class="fr">Ingénieur Logiciel Embarqué</span></h3>
+          <ul class="en">
+            <li>Developed a C++/Qt application that controls bench equipment and automates electronic acceptance testing.</li>
+            <li>Wrote Python drivers for the lab instruments on the test bench (Keysight power supply, multimeter, NI 6363 / 6501 I/O).</li>
+            <li>Integrated 15+ ATP (Acceptance Test Procedure) tests into the application and validated their execution.</li>
+            <li>Built a Python script that generates ATR (Acceptance Test Results) reports automatically.</li>
+          </ul>
+          <ul class="fr">
+            <li>Développement d'une application C++/Qt qui pilote les équipements du banc et automatise les tests d'acceptation.</li>
+            <li>Drivers Python pour les instruments du banc (alimentation et multimètre Keysight, E/S NI 6363 / 6501).</li>
+            <li>Intégration de plus de 15 tests ATP (procédure de test d'acceptation) et validation de leur exécution.</li>
+            <li>Script Python de génération automatique des rapports ATR (résultats des tests d'acceptation).</li>
+          </ul>
+          <div class="tags"><span>C++</span><span>Qt</span><span>Python</span><span>Keysight</span><span>NI DAQ</span></div>
+        </div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-when mono">
+          <p class="job-date"><span class="en">Aug 2025 — Mar 2026</span><span class="fr">Août 2025 — Mars 2026</span></p>
+          <p class="job-org">SERMA International</p>
+          <p class="job-client"><span class="en">Client: Renault</span><span class="fr">Client : Renault</span></p>
+        </div>
+        <div class="job-card">
+          <h3 class="job-t"><span class="en">Automotive Test &amp; Validation Engineer</span><span class="fr">Ingénieur Test &amp; Validation Automobile</span></h3>
+          <ul class="en">
+            <li>Configured and tested A-IVI2 Android Automotive infotainment on Hardware-in-the-Loop benches with Vector CANalyzer and CAPL.</li>
+            <li>Ran functional, non-functional, regression, performance and stress campaigns; validated Apple CarPlay, Android Auto and ADAS features.</li>
+            <li>Designed test cases in CodeBeamer and Silk Central; filed and triaged 10–15 Jira tickets a month with SQL-based dashboards.</li>
+            <li>Measured audio quality with the R&amp;S® UPP analyzer at the end of each sprint and reported status per software release.</li>
+            <li>Worked with LGE, Ampere and RNTBCI on defect resolution; coordinated test tasks and onboarded new team members.</li>
+          </ul>
+          <ul class="fr">
+            <li>Configuration et test de l'infodivertissement Android Automotive A-IVI2 sur banc HIL avec Vector CANalyzer et CAPL.</li>
+            <li>Campagnes de tests fonctionnels, non fonctionnels, de régression, de performance et de stress ; validation CarPlay, Android Auto et ADAS.</li>
+            <li>Conception de cas de test sous CodeBeamer et Silk Central ; 10 à 15 tickets Jira par mois, suivis via tableaux de bord SQL.</li>
+            <li>Mesures de qualité audio avec l'analyseur R&amp;S® UPP à chaque fin de sprint, reporting par version logicielle.</li>
+            <li>Collaboration avec LGE, Ampere et RNTBCI sur les anomalies ; coordination des tests et accueil des nouveaux arrivants.</li>
+          </ul>
+          <div class="tags"><span>CANalyzer</span><span>CAPL</span><span>HIL</span><span>CodeBeamer</span><span>Silk Central</span><span>Jira</span><span>DDT2000</span><span>R&amp;S UPP</span></div>
+        </div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-when mono">
+          <p class="job-date"><span class="en">Feb 2025 — Jul 2025</span><span class="fr">Févr. — Juil. 2025</span></p>
+          <p class="job-org">SERMA International</p>
+        </div>
+        <div class="job-card">
+          <h3 class="job-t"><span class="en">End-of-Studies Intern — AI for Test Validation</span><span class="fr">Stagiaire PFE — IA pour la validation</span></h3>
+          <ul class="en">
+            <li>Built NLP models (BERT, SBERT, RoBERTa, BART) to read, classify and summarise Jira tickets from IVI test campaigns.</li>
+            <li>Added duplicate detection, priority prediction and completeness checks against project specifications (with OCR).</li>
+            <li>Generated structured tickets automatically from test results and logs; wrapped it all in a Jira-like PySide6/QML interface.</li>
+          </ul>
+          <ul class="fr">
+            <li>Modèles NLP (BERT, SBERT, RoBERTa, BART) pour analyser, classer et résumer les tickets Jira des campagnes IVI.</li>
+            <li>Détection des doublons, prédiction de priorité et vérification de conformité aux spécifications (avec OCR).</li>
+            <li>Génération automatique de tickets à partir des résultats et logs de test, dans une interface PySide6/QML inspirée de Jira.</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>NLP</span><span>Transformers</span><span>NLTK</span><span>OCR</span><span>QML</span></div>
+        </div>
+      </article>
+
+      <article class="job reveal">
+        <div class="job-when mono">
+          <p class="job-date"><span class="en">Jul 2024 — Sep 2024</span><span class="fr">Juil. — Sept. 2024</span></p>
+          <p class="job-org">ACTIA Engineering Services</p>
+        </div>
+        <div class="job-card">
+          <h3 class="job-t"><span class="en">Engineering Intern</span><span class="fr">Stagiaire Ingénieur</span></h3>
+          <ul class="en">
+            <li>Developed a real-time air-quality monitoring system in Rust on STM32 and ESP32.</li>
+            <li>Chained Bluetooth (sensor → ESP32), UART (ESP32 → STM32) and MQTT (ESP32 → ESP32 → phone) end to end.</li>
+          </ul>
+          <ul class="fr">
+            <li>Développement d'un système de surveillance de la qualité de l'air en temps réel, en Rust sur STM32 et ESP32.</li>
+            <li>Chaîne complète Bluetooth (capteur → ESP32), UART (ESP32 → STM32) et MQTT (ESP32 → ESP32 → téléphone).</li>
+          </ul>
+          <div class="tags"><span>Rust</span><span>STM32</span><span>ESP32</span><span>UART</span><span>MQTT</span><span>Bluetooth</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section wrap">
+    <h2 class="sh reveal"><span class="sh-n mono">03</span><span class="en">Projects</span><span class="fr">Projets</span><span class="sh-line"></span></h2>
+
+    <div class="pfilter reveal">
+      <button class="pf active mono" data-f="all"><span class="en">all</span><span class="fr">tous</span></button>
+      <button class="pf mono" data-f="pro"><span class="en">professional</span><span class="fr">professionnels</span></button>
+      <button class="pf mono" data-f="aca"><span class="en">academic &amp; personal</span><span class="fr">académiques &amp; perso</span></button>
+    </div>
+
+    <div class="pgrid">
+      <article class="pc reveal" data-k="pro">
+        <p class="pc-n mono">01</p>
+        <p class="pc-kind mono">SERMA · 2026</p>
+        <h3 class="pc-t"><span class="en">Automated Test Bench Software</span><span class="fr">Logiciel de banc de test automatisé</span></h3>
+        <p class="pc-d en">Desktop application in C++/Qt that drives the bench instruments through Python drivers, runs 15+ acceptance test procedures and exports the ATR report at the end of a run.</p>
+        <p class="pc-d fr">Application C++/Qt qui pilote les instruments du banc via des drivers Python, exécute plus de 15 procédures de test d'acceptation et exporte le rapport ATR en fin d'exécution.</p>
+        <div class="tags"><span>C++</span><span>Qt</span><span>Python</span><span>ATP / ATR</span></div>
+      </article>
+
+      <article class="pc reveal" data-k="pro">
+        <p class="pc-n mono">02</p>
+        <p class="pc-kind mono"><span class="en">SERMA · 2025 · Final-year project</span><span class="fr">SERMA · 2025 · PFE</span></p>
+        <h3 class="pc-t"><span class="en">AI Assistant for Jira Test Tickets</span><span class="fr">Assistant IA pour tickets Jira</span></h3>
+        <p class="pc-d en">Turns test results and logs into well-formed Jira tickets: drafts them, checks them against the spec, predicts priority and flags likely duplicates using transformer models.</p>
+        <p class="pc-d fr">Transforme résultats et logs de test en tickets Jira propres : rédaction, vérification par rapport à la spécification, prédiction de priorité et détection des doublons avec des modèles Transformers.</p>
+        <div class="tags"><span>Python</span><span>BERT / SBERT</span><span>BART</span><span>PySide6 / QML</span></div>
+      </article>
+
+      <article class="pc reveal" data-k="pro">
+        <p class="pc-n mono">03</p>
+        <p class="pc-kind mono">ACTIA · 2024</p>
+        <h3 class="pc-t"><span class="en">Air-Quality Monitoring System</span><span class="fr">Surveillance de la qualité de l'air</span></h3>
+        <p class="pc-d en">An AQS sensor reports over Bluetooth to an ESP32, which forwards to an STM32 over UART; a second ESP32 publishes readings over MQTT to the user's phone. Written in Rust.</p>
+        <p class="pc-d fr">Un capteur AQS transmet en Bluetooth à un ESP32, qui relaie vers un STM32 en UART ; un second ESP32 publie les mesures en MQTT sur le téléphone de l'utilisateur. Écrit en Rust.</p>
+        <div class="tags"><span>Rust</span><span>STM32</span><span>ESP32</span><span>MQTT</span></div>
+      </article>
+
+      <article class="pc reveal" data-k="aca">
+        <p class="pc-n mono">04</p>
+        <p class="pc-kind mono"><span class="en">FST · 2024 · Team of 4</span><span class="fr">FST · 2024 · Équipe de 4</span></p>
+        <h3 class="pc-t"><span class="en">Robotic Hand Controlled via Camera</span><span class="fr">Main robotique contrôlée par caméra</span></h3>
+        <p class="pc-d en">A 3D-printed robotic hand that mirrors the user's hand in real time. Python (OpenCV + MediaPipe) tracks the fingers from a webcam and sends commands over UART to an STM32H7A3ZI that drives the servo motors. Mechanics designed in Fusion 360.</p>
+        <p class="pc-d fr">Main robotique imprimée en 3D qui reproduit en temps réel la main de l'utilisateur. Python (OpenCV + MediaPipe) suit les doigts par webcam et envoie les commandes en UART à un STM32H7A3ZI qui pilote les servomoteurs. Mécanique conçue sous Fusion 360.</p>
+        <div class="tags"><span>STM32</span><span>C</span><span>Python</span><span>OpenCV</span><span>MediaPipe</span><span>Fusion 360</span></div>
+        <a class="pc-link mono" href="https://github.com/BerrimaHamza/Robotic-Hand-Controlled-via-Camera" target="_blank" rel="noopener">github →</a>
+      </article>
+
+      <article class="pc reveal" data-k="aca">
+        <p class="pc-n mono">05</p>
+        <p class="pc-kind mono"><span class="en">Personal · 2024</span><span class="fr">Personnel · 2024</span></p>
+        <h3 class="pc-t"><span class="en">Image Processing Library</span><span class="fr">Bibliothèque de traitement d'images</span></h3>
+        <p class="pc-d en">A C++ image-processing library built on OpenCV, integrated into a graphical interface written in C#.</p>
+        <p class="pc-d fr">Bibliothèque C++ de traitement d'images basée sur OpenCV, intégrée dans une interface graphique développée en C#.</p>
+        <div class="tags"><span>C++</span><span>C#</span><span>OpenCV</span></div>
+      </article>
+
+      <article class="pc reveal" data-k="aca">
+        <p class="pc-n mono">06</p>
+        <p class="pc-kind mono"><span class="en">Personal · 2024</span><span class="fr">Personnel · 2024</span></p>
+        <h3 class="pc-t"><span class="en">Banking Management System</span><span class="fr">Système de gestion bancaire</span></h3>
+        <p class="pc-d en">Console application in plain C to create, edit, view and delete bank accounts and handle deposits and withdrawals, organised into separate account and menu modules.</p>
+        <p class="pc-d fr">Application console en C pour créer, modifier, consulter et supprimer des comptes bancaires et gérer dépôts et retraits, organisée en modules compte et menu.</p>
+        <div class="tags"><span>C</span></div>
+        <a class="pc-link mono" href="https://github.com/BerrimaHamza/Banking-Management-System" target="_blank" rel="noopener">github →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section wrap">
+    <h2 class="sh reveal"><span class="sh-n mono">04</span><span class="en">Skills</span><span class="fr">Compétences</span><span class="sh-line"></span></h2>
+
+    <div class="skrows">
+      <div class="skr reveal"><p class="skl mono"><span class="en">programming</span><span class="fr">programmation</span></p>
+        <div class="tags"><span>C</span><span>C++</span><span>Python</span><span>Rust</span><span>C#</span><span>Qt / QML</span><span>CAPL</span></div></div>
+      <div class="skr reveal"><p class="skl mono"><span class="en">boards &amp; hardware</span><span class="fr">cartes &amp; matériel</span></p>
+        <div class="tags"><span>STM32</span><span>ESP32</span><span>Raspberry Pi</span><span>Arduino</span><span>NI 6363</span><span>NI 6501</span><span>Keysight</span></div></div>
+      <div class="skr reveal"><p class="skl mono"><span class="en">protocols</span><span class="fr">protocoles</span></p>
+        <div class="tags"><span>CAN</span><span>UART</span><span>SPI</span><span>I2C</span><span>MQTT</span><span>Bluetooth</span></div></div>
+      <div class="skr reveal"><p class="skl mono"><span class="en">automotive &amp; test tools</span><span class="fr">outils automobile &amp; test</span></p>
+        <div class="tags"><span>Vector CANalyzer</span><span>DDT2000</span><span>CodeBeamer</span><span>Silk Central</span><span>Jira</span><span>R&amp;S UPP / UPV</span></div></div>
+      <div class="skr reveal"><p class="skl mono"><span class="en">testing</span><span class="fr">tests</span></p>
+        <div class="tags"><span>HIL</span><span><span class="en">Functional</span><span class="fr">Fonctionnel</span></span><span><span class="en">Regression</span><span class="fr">Régression</span></span><span>Performance</span><span>Stress</span><span><span class="en">Black-box</span><span class="fr">Boîte noire</span></span><span><span class="en">Exploratory</span><span class="fr">Exploratoire</span></span><span>UAT</span></div></div>
+      <div class="skr reveal"><p class="skl mono"><span class="en">design &amp; simulation</span><span class="fr">conception &amp; simulation</span></p>
+        <div class="tags"><span>Qt Creator</span><span>STM32CubeIDE</span><span>MATLAB / Simulink</span><span>Proteus ISIS</span><span>Fusion 360</span><span>Linux</span></div></div>
+      <div class="skr reveal"><p class="skl mono"><span class="en">ai / vision</span><span class="fr">ia / vision</span></p>
+        <div class="tags"><span>NLP</span><span>Transformers</span><span>NLTK</span><span>OCR</span><span>OpenCV</span><span>MediaPipe</span></div></div>
+      <div class="skr reveal"><p class="skl mono"><span class="en">ways of working</span><span class="fr">méthodes</span></p>
+        <div class="tags"><span>Agile / Scrum</span><span><span class="en">Client meetings</span><span class="fr">Réunions client</span></span><span><span class="en">Onboarding</span><span class="fr">Intégration d'équipe</span></span><span><span class="en">Planning</span><span class="fr">Planification</span></span></div></div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section wrap">
+    <h2 class="sh reveal"><span class="sh-n mono">05</span><span class="en">Certifications &amp; volunteering</span><span class="fr">Certifications &amp; bénévolat</span><span class="sh-line"></span></h2>
+
+    <div class="cols">
+      <ul class="clist reveal">
+        <li><p class="cn">EF SET English Certificate</p><p class="cm mono">70/100 · C1</p></li>
+        <li><p class="cn">C++ Programming: Classes and Data</p><p class="cm mono"><span class="en">online course</span><span class="fr">cours en ligne</span></p></li>
+        <li><p class="cn">Introduction to Object-Oriented Programming in C++</p><p class="cm mono"><span class="en">online course</span><span class="fr">cours en ligne</span></p></li>
+        <li><p class="cn">Introduction and Programming with IoT Boards</p><p class="cm mono"><span class="en">online course</span><span class="fr">cours en ligne</span></p></li>
+      </ul>
+      <ul class="clist reveal">
+        <li><p class="cn"><span class="en">IEEE RAS — FST Student Branch, member</span><span class="fr">IEEE RAS — branche étudiante FST, membre</span></p><p class="cm mono">2023 — 2024</p></li>
+        <li><p class="cn"><span class="en">Tunisian Red Crescent, Beni Khalled — volunteer</span><span class="fr">Croissant-Rouge tunisien, Béni Khalled — bénévole</span></p><p class="cm mono">2018 — 2019</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section wrap">
+    <h2 class="sh reveal"><span class="sh-n mono">06</span>Contact<span class="sh-line"></span></h2>
+
+    <div class="contact reveal">
+      <p class="contact-lead">
+        <span class="en">Working on embedded software, test automation or automotive validation? I'd be glad to hear about it.</span>
+        <span class="fr">Vous travaillez sur du logiciel embarqué, de l'automatisation de tests ou de la validation automobile ? Je serai ravi d'en discuter.</span>
+      </p>
+      <a class="contact-mail" href="mailto:berrimahamza@outlook.com">berrimahamza@outlook.com</a>
+      <div class="contact-row mono">
+        <a href="tel:+21625697474">+216 25 697 474</a>
+        <a href="https://www.linkedin.com/in/hamzaberrima/" target="_blank" rel="noopener">linkedin/hamzaberrima</a>
+        <a href="https://github.com/BerrimaHamza" target="_blank" rel="noopener">github/BerrimaHamza</a>
+        <span><span class="en">Ariana, Tunisia</span><span class="fr">Ariana, Tunisie</span></span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="wrap">
+    <p class="mono">© <span id="yr">2026</span> Hamza Berrima</p>
+    <a class="mono" href="#home"><span class="en">back to top ↑</span><span class="fr">haut de page ↑</span></a>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
